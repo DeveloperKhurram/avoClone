@@ -1,8 +1,15 @@
+@import url("header.css");
+@import url("hero-section.css");
+@import url("about.css");
+@import url("work.css");
+@import url("testimonial.css");
 @import url("responsive.css");
 :root {
   --text-white: #fff;
   --text-red: #d1002c;
-
+  /* --bg-gray: #e6e8e99e; */
+  --bg-gray: #f3f3f3;
+  /* --bg-gray: yellow; */
   --gray-light: #ffffff99;
 }
 * {
@@ -18,23 +25,35 @@ html {
 h1 {
   font-size: 40px;
   text-transform: uppercase;
-  /* color: var(--text-white); */
   line-height: 1.1;
   font-weight: 900;
   margin: 0 0 1.5rem;
 }
-
-.nav-link {
-  font-size: 1.3rem;
-  padding: 0.9rem 2rem;
-  color: var(--gray-light);
-  font-weight: 600;
+h2 {
+  font-size: clamp(2.8rem, 3.2vw, 3.6rem);
+  font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  opacity: 1 !important;
-  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8);
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8);
+}
+p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: rgb(160, 160, 180);
+  line-height: 1.5;
+}
+a {
   text-decoration: none;
-  background-color: transparent;
+  display: block;
+  color: var(--text-white);
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -42,8 +61,116 @@ h1 {
   -o-transition: all 0.3s linear;
 }
 
-.nav-link:hover {
-  color: var(--text-red);
+a:hover {
   text-decoration: none;
   outline: none !important;
+}
+h3.icon {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+h4 {
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.bg-gray {
+  background: var(--bg-gray);
+}
+.angle-down,
+.angle-up {
+  position: relative;
+}
+.angle-down::before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: clamp(8rem, 14vw, 20rem);
+  background: var(--text-white);
+  /* background: gray; */
+  border: none;
+  z-index: 1;
+  top: clamp(-5rem, -12vw, -15rem);
+  transform: skewY(5deg);
+  -webkit-transform: skewY(5deg);
+  -moz-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  -o-transform: skewY(5deg);
+}
+
+.angle-down::after {
+  content: "";
+  position: absolute;
+  border: none;
+  width: 40%;
+  height: clamp(8rem, 14vw, 20rem);
+  background: var(--text-white);
+  /* background: red; */
+  z-index: 1;
+  top: clamp(-5rem, -12vw, -15rem);
+  right: 0;
+  transform: skewY(-5deg);
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+}
+.angle-up::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: clamp(8rem, 12vw, 20rem);
+  background: var(--bg-gray);
+  /* background: red; */
+  border: none;
+  z-index: 1;
+  top: clamp(-9.2rem, -8vw, -11rem);
+  transform: skewY(-5deg);
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+}
+
+.angle-up::after {
+  content: "";
+  position: absolute;
+  border: none;
+  width: 60%;
+  height: clamp(8rem, 12vw, 20rem);
+  background: var(--bg-gray);
+  /* background: blue; */
+  top: clamp(-7rem, -8vw, -9rem);
+  right: 0;
+  transform: skewY(5deg);
+  -webkit-transform: skewY(5deg);
+  -moz-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  -o-transform: skewY(5deg);
+}
+
+@media (width <= 1440px) {
+  .angle-up::before {
+    top: clamp(-8.2rem, -8vw, -11rem);
+  }
+}
+
+@media (width <= 1024px) {
+  .angle-up::before {
+    top: clamp(-7.9rem, -8vw, -11rem);
+  }
+}
+
+@media (width <= 768px) {
+  .angle-up::before {
+    top: clamp(-7.7rem, -8vw, -11rem);
+  }
+}
+
+@media (width < 426px) {
+  .angle-up::before {
+    top: clamp(-7.4rem, -8vw, -11rem);
+  }
 }

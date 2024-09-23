@@ -1,0 +1,102 @@
+.work-section {
+  padding-top: clamp(9.6rem, 15vw, 19.2rem);
+  margin-top: clamp(9.6rem, 15vw, 19.2rem);
+}
+
+.work-section .work-img {
+  width: 100%;
+  height: 55rem;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.work-section .sub-heading {
+  display: block;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.work-section .category a.heading {
+  font-size: clamp(2.2rem, 2.8vw, 4rem);
+  letter-spacing: 0.2rem;
+  word-wrap: break-word !important;
+  white-space: normal !important;
+  color: #000;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+
+}
+
+.work-section .heading:hover {
+  color: var(--text-red);
+}
+
+.work-section .category {
+  width: fit-content;
+}
+
+.work-section .text {
+  width: clamp(24.2rem, 35.6vw, 47rem);
+}
+
+:is(.work-section, .testimonial-section) .profile .profile-img {
+  width: 6rem;
+  height: 6rem;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.profile .detail span {
+  font-size: 1.2rem;
+  letter-spacing: 3;
+  color: #847b7b;
+  align-self: self-start;
+}
+
+.white-btn {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.3rem;
+  color: #000;
+  font-weight: 700;
+  border: 0.1rem solid #d9d9e1;
+  padding: 0.7rem 1rem;
+  margin-top: 3.2rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  width: fit-content;
+
+  &:hover {
+    color: var(--text-red);
+    border: 0.1rem solid var(--text-red);
+  }
+}

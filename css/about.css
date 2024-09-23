@@ -1,0 +1,34 @@
+.about-section {
+  padding-top: clamp(9.6rem, 15vw, 19.2rem);
+}
+
+.tech-img {
+  width: 6rem;
+  height: 6rem;
+  overflow: hidden;
+}
+
+.tech-img img {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.about-section .number {
+  display: flex;
+  align-items: start;
+  gap: 1.2rem;
+}
+
+.about-section .number span {
+  font-weight: 300;
+  font-size: 5rem;
+  color: var(--text-red);
+  border-bottom: 0.1rem solid #d9d9e1;
+}
+
+.about-section .number .number-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}

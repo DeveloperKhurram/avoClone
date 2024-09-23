@@ -1,0 +1,143 @@
+.hero-section {
+  height: 90vh;
+}
+.carousel-image {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+.carousel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  left: 14rem;
+
+  position: absolute;
+  bottom: 16rem;
+}
+
+button.indicator {
+  width: 1rem !important;
+  height: 1rem !important;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+button.indicator.active {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -0.2rem 0 0 -0.2rem;
+    width: 1.4rem !important;
+    height: 1.4rem !important;
+    border: 0.1rem solid var(--text-white);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+}
+
+.carousel-caption {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  height: fit-content;
+}
+
+.carousel-caption .number {
+  align-self: flex-start;
+  width: 75%;
+
+  & .number-side {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--text-white);
+    padding-right: 1.2rem;
+    border-right: 0.5rem solid var(--text-red);
+  }
+
+  & .text {
+    color: #ffffff66;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    text-align: end;
+    /* margin-left: 25.2rem; */
+  }
+}
+
+.carousel-caption .text-side {
+  & h1 {
+    font-size: clamp(3rem, 3vw, 4rem);
+    text-transform: uppercase;
+    line-height: 1.1;
+    font-weight: 900;
+    width: 95%;
+  }
+
+  & span {
+    display: block;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    width: 95%;
+  }
+}
+
+.red-btn {
+  background: var(--text-red) !important;
+  border: 1px solid var(--text-red) !important;
+  color: var(--text-white) !important;
+  display: block;
+  text-align: center;
+  padding: 0.875rem 0.5rem !important;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 0.5rem;
+  margin-top: 3.2rem;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+
+  width: fit-content;
+}
+
+.carousel-caption .number {
+  text-align: start;
+  width: 100%;
+}
+
+.carousel-caption .number .text {
+  text-align: start;
+  margin-bottom: 1.2rem;
+}
+
+.carousel-caption .text-side {
+  & h1 {
+    font-size: 2.2rem;
+  }
+}
