@@ -1,0 +1,98 @@
+.footer-section {
+  font-size: 16px;
+  padding: 14rem 0;
+  background: black;
+  position: relative;
+}
+.footer-section .footer-section-widget h2 {
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer-section .footer-section-widget ul li {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-section .footer-section-widget ul li a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-section .footer-section-widget ul li a span {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+.footer-section .footer-section-widget .btn-primary {
+  background: #fff !important;
+  border: 2px solid #fff !important;
+}
+.footer-section .footer-section-widget .btn-primary:hover {
+  background: #fff;
+  border: 2px solid #fff !important;
+}
+.footer-section p {
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer-section a {
+  color: #d1002c;
+}
+.footer-section a:hover {
+  color: #d1002c;
+}
+
+.footer-section-social{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.footer-section-social li a {
+  height: 40px;
+  width: 40px;
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  position: relative;
+}
+.footer-section-social li a .social {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.footer-section-social li a:hover {
+  color: #fff;
+}
+
+.block-23 ul {
+    padding: 0;
+  }
+  .block-23 ul li {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .block-23 ul li,
+  .block-23 ul li > a {
+    display: table;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  .block-23 ul li span {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .block-23 ul li .icon,
+  .block-23 ul li .text {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .block-23 ul li .icon {
+    width: 40px;
+    padding-top: 2px;
+  }
+
+  .footer-section-widget .fa-chevron-right{
+    margin-right: 1rem;
+    font-weight: 700 !important;
+  }

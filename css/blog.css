@@ -1,0 +1,57 @@
+.block-20 {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 270px;
+  margin-bottom: 20px;
+}
+.blog-entry {
+  overflow: hidden;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .blog-entry {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .blog-entry {
+    margin-bottom: 30px;
+  }
+}
+.blog-entry .text {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.blog-entry .text .heading {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.blog-entry .text .heading a {
+  color: #000000;
+}
+.blog-entry .text .heading a:hover,
+.blog-entry .text .heading a:focus,
+.blog-entry .text .heading a:active {
+  color: #d1002c;
+}
+.blog-entry .meta > div {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.blog-entry .meta > div a {
+  color: #000000;
+}
+.blog-entry .meta > div a:hover {
+  color: #000000;
+}
