@@ -1,0 +1,67 @@
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.hero-wrap.hero-wrap-2 {
+  height: 600px !important;
+  position: relative;
+}
+.hero-wrap.hero-wrap-2 .overlay {
+  width: 100%;
+  opacity: 0.1;
+  height: 600px;
+}
+.hero-wrap.hero-wrap-2 .slider-text {
+  height: 600px !important;
+}
+.hero-wrap.hero-wrap-2 .slider-text h1:after {
+  display: none;
+}
+
+.slider-text {
+  height: 850px;
+}
+.slider-text p {
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+.slider-text .breadcrumbs {
+  font-size: 14px;
+  margin-bottom: 20px;
+  z-index: 99;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.slider-text .breadcrumbs span {
+  color: rgba(255, 255, 255, 0.7);
+}
+.slider-text .breadcrumbs span i {
+  color: #d1002c;
+  font-size: 13px;
+}
+.slider-text .breadcrumbs span a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.slider-text .breadcrumbs span a:hover,
+.slider-text .breadcrumbs span a:focus {
+  color: #d1002c;
+}
+.slider-text .breadcrumbs span a:hover i,
+.slider-text .breadcrumbs span a:focus i {
+  color: #d1002c;
+}
+.slider-text .breadcrumbs .bread {
+  font-weight: 900;
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 1rem !important;
+  margin-top: 0px;
+  line-height: 1.5;
+  font-size: 2.5rem;
+  box-sizing: border-box;
+}
+.mr-2 {
+  margin-right: 0.5rem !important;
+}
