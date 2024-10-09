@@ -6,6 +6,7 @@
 @import url("work.css");
 @import url("testimonial.css");
 @import url("blog.css");
+@import url("team.css");
 @import url("footer.css");
 @import url("responsive.css");
 :root {
@@ -297,4 +298,41 @@ a:hover {
   -moz-transform: matrix(1, -0.19, 0, 2, 0, 0);
   -ms-transform: matrix(1, -0.19, 0, 2, 0, 0);
   -o-transform: matrix(1, -0.19, 0, 2, 0, 0);
+}
+.footer-matrix-top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100px;
+}
+.footer-matrix-top:after,
+.footer-matrix-top:before {
+  position: absolute;
+  content: "";
+  height: 50px;
+  background: black;
+  z-index: 2;
+  top: -25px;
+}
+.footer-matrix-top:before {
+  width: 35%;
+  left: 0;
+  -ms-transform: matrix(1, -0.19, 0, 2, 0, 0);
+  /* IE 9 */
+  -webkit-transform: matrix(1, -0.19, 0, 2, 0, 0);
+  transform: matrix(1, -0.19, 0, 2, 0, 0);
+  /* Standard syntax */
+}
+.footer-matrix-top:after {
+  width: 65%;
+  right: 0;
+  -ms-transform: matrix(1, 0.102, 0, 2, 0, 0);
+  /* IE 9 */
+  -webkit-transform: matrix(1, 0.102, 0, 2, 0, 0);
+  transform: matrix(1, 0.102, 0, 2, 0, 0);
+  /* Standard syntax */
+}
+.img{
+  background: center / cover no-repeat;
 }

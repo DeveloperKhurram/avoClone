@@ -1,57 +1,78 @@
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-.hero-wrap.hero-wrap-2 {
+.hero-about {
   height: 600px !important;
   position: relative;
+
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/bg_2.jpg"); */
+
+  background: center / cover no-repeat;
 }
-.hero-wrap.hero-wrap-2 .overlay {
+
+.hero-about .overlay {
   width: 100%;
   opacity: 0.1;
   height: 600px;
+  position: absolute;
+  inset: 0px;
+  content: "";
+  background: linear-gradient(45deg, black 0%, white 100%);
 }
-.hero-wrap.hero-wrap-2 .slider-text {
+.hero-about .slider-text {
   height: 600px !important;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+  -webkit-box-align: end !important;
+  align-items: flex-end !important;
 }
-.hero-wrap.hero-wrap-2 .slider-text h1:after {
-  display: none;
-}
+.slider-text .text {
+  padding-right: 0px;
+  padding-left: 0px;
 
-.slider-text {
-  height: 850px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 7rem !important;
+  padding-bottom: 3rem !important;
 }
-.slider-text p {
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 20px;
+@media (min-width: 768px) {
+  .slider-text .text {
+    -webkit-box-flex: 0;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
 }
 .slider-text .breadcrumbs {
+  position: relative;
   font-size: 14px;
   margin-bottom: 20px;
   z-index: 99;
   text-transform: uppercase;
   font-weight: 500;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0px;
 }
 .slider-text .breadcrumbs span {
   color: rgba(255, 255, 255, 0.7);
 }
-.slider-text .breadcrumbs span i {
+.slider-text .breadcrumbs span .fa-chevron-right {
   color: #d1002c;
   font-size: 13px;
 }
 .slider-text .breadcrumbs span a {
   color: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  display: inline-block;
 }
 .slider-text .breadcrumbs span a:hover,
 .slider-text .breadcrumbs span a:focus {
   color: #d1002c;
 }
-.slider-text .breadcrumbs span a:hover i,
-.slider-text .breadcrumbs span a:focus i {
-  color: #d1002c;
-}
-.slider-text .breadcrumbs .bread {
+
+.slider-text h1 {
   font-weight: 900;
   position: relative;
   color: rgb(255, 255, 255);
@@ -59,9 +80,5 @@
   margin-bottom: 1rem !important;
   margin-top: 0px;
   line-height: 1.5;
-  font-size: 2.5rem;
-  box-sizing: border-box;
-}
-.mr-2 {
-  margin-right: 0.5rem !important;
+  font-size: 4rem;
 }
