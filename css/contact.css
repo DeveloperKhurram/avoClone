@@ -1,0 +1,98 @@
+.contact-section .img {
+  width: 100%;
+  background-position: top center;
+}
+
+.contact-section .contact-form {
+  width: 100%;
+  border-radius: 5px;
+  background: #f3f3f3;
+}
+@media (max-width: 767.98px) {
+  .contact-section .contact-form .btn-primary {
+    display: block;
+    width: 100%;
+  }
+}
+.contact-section .contact-form .form-control {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+.contact-section .contact-form .form-control {
+  /* height: 36px; */
+  background: #fff !important;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  border-radius: 2px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none;
+}
+::placeholder {
+  color: #000 !important;
+}
+.contact-section .contact-form .form-control:focus,
+.contact-section .contact-form .form-control:active {
+  border-color: #d1002c !important;
+}
+.contact-section .contact-form textarea.form-control {
+  height: inherit !important;
+}
+
+.dbox {
+  width: 100%;
+  margin-bottom: 0px;
+}
+@media (max-width: 767.98px) {
+  .dbox {
+    margin-bottom: 25px !important;
+    padding: 0 20px;
+  }
+}
+.dbox p {
+  margin-bottom: 0;
+}
+.dbox p span {
+  font-weight: 500;
+  color: #000000;
+}
+.dbox p a {
+  color: #d1002c;
+}
+.dbox .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #d1002c;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.dbox .icon span {
+  font-size: 20px;
+  color: #fff;
+}
+.dbox .text {
+  width: calc(100% - 50px);
+  padding-left: 15px;
+}
+.dbox .text span {
+  display: block;
+  line-height: 1.2;
+}
+
+#map {
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  #map {
+    height: 300px;
+
+    background: #000;
+  }
+}
+
+.contact-form .row {
+  flex-wrap: wrap;
+  row-gap: 12px;
+}

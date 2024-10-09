@@ -8,6 +8,7 @@
 @import url("blog.css");
 @import url("team.css");
 @import url("pagination.css");
+@import url("contact.css");
 @import url("footer.css");
 @import url("responsive.css");
 :root {
@@ -49,6 +50,18 @@ body {
     font-size: 28px;
   }
 }
+.heading-section .subheading {
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 0;
+  color: #d1002c;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+}
+
 a {
   color: rgb(0, 0, 0);
   padding-bottom: 5px;
