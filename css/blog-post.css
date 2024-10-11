@@ -1,3 +1,59 @@
+.block-21 .blog-img {
+  display: block;
+  height: 80px;
+  width: 80px;
+}
+.mr-4 {
+  margin-right: 1.5rem !important;
+}
+.block-21 .text {
+  width: calc(100% - 100px);
+}
+.block-21 .text .heading {
+  font-size: 18px;
+  font-weight: 300;
+}
+.block-21 .text .heading a {
+  color: #000000;
+}
+.block-21 .text .heading a:hover,
+.block-21 .text .heading a:active,
+.block-21 .text .heading a:focus {
+  color: #d1002c;
+}
+.block-21 .text .meta > div {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.block-21 .text .meta > div a {
+  color: gray;
+}
+.heading {
+  margin-bottom: 1rem !important;
+  margin-top: 0px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 3.2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.about-author {
+  background: #f3f3f3;
+}
+.author-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem !important;
+  vertical-align: middle;
+  border-style: none;
+}
+.about-author .desc {
+  margin: 0 1.6rem 0.8rem 5.6rem;
+}
+.about-author .desc h3 {
+  font-size: 24px;
+  color: #000;
+}
 .tagcloud a {
   text-transform: uppercase;
   display: inline-block;
@@ -12,7 +68,14 @@
 .tagcloud a:hover {
   border: 1px solid #000;
 }
-
+.comment-heading {
+  margin-bottom: 3rem !important;
+  margin-top: 0px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 2.8rem;
+  color: rgba(0, 0, 0, 0.8);
+}
 .comment-form-wrap form {
   background: #f3f3f3;
 }
@@ -108,6 +171,9 @@
   font-size: 20px;
   margin-bottom: 15px;
   font-weight: 600;
+  margin-top: 0px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8);
 }
 @media (max-width: 991.98px) {
   .sidebar-box {
@@ -140,11 +206,4 @@
 .categories li.active a {
   color: #000000;
   font-style: italic;
-}
-.about-author {
-  background: #f3f3f3;
-}
-.about-author .desc h3 {
-  font-size: 24px;
-  color: #000;
 }
