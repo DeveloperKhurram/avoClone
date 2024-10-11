@@ -92,7 +92,7 @@
   }
 }
 
-.contact-form .row {
+.contact-form .row, .comment-form-wrap .row {
   flex-wrap: wrap;
   row-gap: 12px;
 }
