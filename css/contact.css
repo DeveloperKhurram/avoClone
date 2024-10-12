@@ -81,18 +81,13 @@
   line-height: 1.2;
 }
 
-#map {
+.map {
+  margin: 3.2rem 0;
   width: 100%;
+  aspect-ratio: 16/9;
 }
-@media (max-width: 767.98px) {
-  #map {
-    height: 300px;
-
-    background: #000;
-  }
-}
-
-.contact-form .row, .comment-form-wrap .row {
+.contact-form .row,
+.comment-form-wrap .row {
   flex-wrap: wrap;
   row-gap: 12px;
 }

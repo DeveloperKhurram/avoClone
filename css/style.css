@@ -348,6 +348,6 @@ a:hover {
   transform: matrix(1, 0.102, 0, 2, 0, 0);
   /* Standard syntax */
 }
-.img{
+.img {
   background: center / cover no-repeat;
 }
