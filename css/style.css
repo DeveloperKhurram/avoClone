@@ -11,6 +11,7 @@
 @import url("contact.css");
 @import url("blog-post.css");
 @import url("footer.css");
+@import url("loader.css");
 @import url("responsive.css");
 :root {
   --bg-primary: #fff;
